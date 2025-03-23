@@ -1,0 +1,47 @@
+body {
+    background-color: #1F2041;
+    height: 100%;
+    display: flex;
+    color: #E6E6FA;
+}
+
+#logo-box{
+    padding-top: 0%;
+    margin-top: 0%;
+}
+.logo{
+    object-fit: contain;
+    height: auto;
+    width: 50%;
+    max-width: 100%;
+}
+
+.left-sidebar {
+    margin: auto;
+    margin-top: 0%;
+    text-align: left;
+    width: 20%;
+    padding-left: 25px;
+}
+
+.content {
+    margin: auto;
+    text-align: left;
+    width: 80%;
+    overflow: auto;
+}
+
+.book {
+    margin: 0 15px 15px 0;
+    text-align: center;
+    width: 35%;
+    float: right;
+    padding: 15px;
+}
+
+.book-img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
