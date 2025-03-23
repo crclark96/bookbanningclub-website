@@ -31,14 +31,38 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'book-img':
                 element.src = getBookImage(head.book);
                 break;
+            case 'book-info':
+                getBookDetails(head.book).then(data => {
+                    if (data) {
+                        element.innerHTML = `<h3>${data.title}</h3><p>${data.author_name[0]}</p>`;
+                    }
+                });
         }
     })
 });
 
-function getBookImage(book) {
+function getISBN(book) {
     bookURL = new URL(book);
     params = new URLSearchParams(bookURL.search);
     ean = params.get('ean');
+    return ean;
+}
+
+async function getBookDetails(book) {
+    isbn = getISBN(book);
+    resp = await fetch(`https://openlibrary.org/search.json?q=${isbn}`);
+    if (!resp.ok) {
+        return null;
+    }
+    data = await resp.json();
+    if (data.numFound == 0) {
+        return null;
+    }
+    return data.docs[0];
+}
+
+function getBookImage(book) {
+    ean = getISBN(book);
     return `https://images-us.bookshop.org/ingram/${ean}.jpg?width=640&v=v2`;
 }
 
