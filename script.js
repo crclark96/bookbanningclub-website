@@ -1,5 +1,10 @@
 const books = [
     {
+        "book": "https://bookshop.org/p/books/border-and-rule-global-migration-capitalism-and-the-rise-of-racist-nationalism-harsha-walia/14842986?ean=9781642592696&next=t",
+        "questions": "https://docs.google.com/document/d/1gXciCtclSvtUQTGb3212j1D1YwKdgyWjSaw73UiXHcU/edit?usp=sharing",
+        "time": "20 June 2025, 6:30 PM"
+    },
+    {
         "book": "https://bookshop.org/p/books/how-to-do-nothing-resisting-the-attention-economy-jenny-odell/8076119?ean=9781612198552&next=t",
         "questions": "https://docs.google.com/document/d/1dtcKhCVc9Q9foZBPL2rQ1SA1zT_4UCIEXfDwo5_b304/edit?tab=t.0",
         "time": "12 May 2025, 6:30 PM"
