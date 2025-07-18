@@ -1,5 +1,10 @@
 const books = [
     {
+        "book": "https://bookshop.org/p/books/dispossessed-the-50th-anniversary-edition-ursula-k-le-guin/21222066?ean=9780063382930&next=t&affiliate=98294",
+        "questions": "https://docs.google.com/document/d/1M7ea0cFyqJub5nZnQu7Bf3A-OiFLgdz9xgT5u7jrQDA/edit?tab=t.0",
+        "time": "19 August 2025, 6:30pm"
+    },
+    {
         "book": "https://bookshop.org/p/books/border-and-rule-global-migration-capitalism-and-the-rise-of-racist-nationalism-harsha-walia/14842986?ean=9781642592696&next=t",
         "questions": "https://docs.google.com/document/d/1gXciCtclSvtUQTGb3212j1D1YwKdgyWjSaw73UiXHcU/edit?usp=sharing",
         "time": "30 June 2025, 6:30 PM"
