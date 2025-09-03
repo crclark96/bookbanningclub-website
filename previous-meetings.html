@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Previous Selections - bookbanningclub.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="left-sidebar">
+        <div id="logo-box">
+            <img src="./logo.png" class="logo">
+        </div>
+        <div class="menu">
+            <h2><a href="index.html" style="color: #E6E6FA; text-decoration: none;">← Back to Current</a></h2>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Previous Selections</h1>
+        <div id="previous-meetings"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('previous-meetings');
+            
+            // Skip the first book (current selection) and show the rest
+            books.slice(1).forEach(async (book, index) => {
+                const bookDiv = document.createElement('div');
+                bookDiv.style.cssText = `
+                    display: flex;
+                    margin-bottom: 40px;
+                    border-bottom: 1px solid #444;
+                    padding-bottom: 20px;
+                `;
+                
+                const imageDiv = document.createElement('div');
+                imageDiv.style.cssText = `
+                    width: 150px;
+                    margin-right: 20px;
+                    flex-shrink: 0;
+                `;
+                
+                const img = document.createElement('img');
+                img.src = getBookImage(book.book);
+                img.style.cssText = `
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                `;
+                imageDiv.appendChild(img);
+                
+                const infoDiv = document.createElement('div');
+                infoDiv.style.cssText = `
+                    flex: 1;
+                `;
+                
+                const timeP = document.createElement('p');
+                timeP.textContent = book.time;
+                timeP.style.cssText = `
+                    margin: 0 0 10px 0;
+                    font-size: 14px;
+                    color: #ccc;
+                `;
+                
+                const detailsDiv = document.createElement('div');
+                detailsDiv.innerHTML = '<p>Loading book details...</p>';
+                
+                const questionsLink = document.createElement('a');
+                questionsLink.href = book.questions;
+                questionsLink.textContent = 'Discussion Questions →';
+                questionsLink.style.cssText = `
+                    color: #E6E6FA;
+                    margin-top: 10px;
+                    display: inline-block;
+                `;
+                
+                infoDiv.appendChild(timeP);
+                infoDiv.appendChild(detailsDiv);
+                infoDiv.appendChild(questionsLink);
+                
+                bookDiv.appendChild(imageDiv);
+                bookDiv.appendChild(infoDiv);
+                container.appendChild(bookDiv);
+                
+                // Load book details using the existing function
+                try {
+                    const details = await getBookDetails(book.book);
+                    if (details) {
+                        detailsDiv.innerHTML = `
+                            <h3 style="margin: 0 0 10px 0;">${details.title}</h3>
+                            <p style="margin: 0 0 10px 0; font-style: italic;">by ${details.author_name ? details.author_name[0] : 'Unknown Author'}</p>
+                        `;
+                    } else {
+                        detailsDiv.innerHTML = '<p>Book details unavailable</p>';
+                    }
+                } catch (error) {
+                    detailsDiv.innerHTML = '<p>Error loading book details</p>';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
