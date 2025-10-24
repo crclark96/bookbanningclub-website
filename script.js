@@ -1,5 +1,10 @@
 const books = [
     {
+        "book": "https://bookshop.org/p/books/braiding-sweetgrass-indigenous-wisdom-scientific-knowledge-and-the-teachings-of-plants-robin-wall-kimmerer/6fa4d296293d20e8?ean=9781571313560&next=t",
+        "questions": "https://docs.google.com/document/d/1adUbpYYHnebuGth1UWn-bBeE8IJhDhvXrpAiFcii8LA/edit?usp=sharing",
+        "time": "24 November 2025, 6:30pm"
+    },
+    {
         "book": "https://bookshop.org/p/books/what-are-people-for-essays-wendell-berry/17314289?ean=9781582434872&next=t",
         "questions": "https://docs.google.com/document/d/1QZs3EZANKTCDohLA6tlr0yAwOgU4BE7G6AFF5RPcPJY/edit?usp=sharing",
         "time": "29 September 2025, 6:30pm"
