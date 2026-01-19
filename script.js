@@ -1,6 +1,6 @@
 const books = [
     {
-        "book": "https://bookshop.org/p/books/mutual-aid-building-solidarity-during-this-crisis-and-the-next-dean-spade/6d964062e8ba8054",
+        "book": "https://bookshop.org/p/books/mutual-aid-building-solidarity-during-this-crisis-and-the-next-dean-spade/6d964062e8ba8054?ean=9781839762123&next=t",
         "questions": "https://docs.google.com/document/d/1XsPZdzYdi8-dU86kQg0b_y_Z6Ta2RAqqyFe5oTU1tuI/edit?usp=sharing",
         "time": "26 February 2026, 6:30pm"
     },
