@@ -1,8 +1,13 @@
 const books = [
     {
+        "book": "https://bookshop.org/p/books/mutual-aid-building-solidarity-during-this-crisis-and-the-next-dean-spade/6d964062e8ba8054",
+        "questions": "https://docs.google.com/document/d/1XsPZdzYdi8-dU86kQg0b_y_Z6Ta2RAqqyFe5oTU1tuI/edit?usp=sharing",
+        "time": "26 February 2026, 6:30pm"
+    },
+    {
         "book": "https://bookshop.org/p/books/steal-this-book-50th-anniversary-edition-abbie-hoffman/14126621b31c3dcc?ean=9780306847172&next=t",
         "questions": "https://docs.google.com/document/d/1H8Ji8vJgbU8bUDXUifTpoj4K-MRS3GKzEv6gpHqk888/edit?usp=sharing",
-        "time": "05 January 2025, 6:30pm"
+        "time": "05 January 2026, 6:30pm"
     },
     {
         "book": "https://bookshop.org/p/books/braiding-sweetgrass-indigenous-wisdom-scientific-knowledge-and-the-teachings-of-plants-robin-wall-kimmerer/6fa4d296293d20e8?ean=9781571313560&next=t",
