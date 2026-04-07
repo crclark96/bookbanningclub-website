@@ -1,5 +1,10 @@
 const books = [
     {
+        "book": "https://bookshop.org/p/books/operation-bounce-house-matt-dinniman/22663289?ean=9780593820308&next=t",
+        "questions": "https://docs.google.com/document/d/1Pdb4Xawi3TK0ur_et6hKMFHBZ3GKRYNmsHi_7N8XsLY/edit?usp=sharing",
+        "time": "18 May 2026, 6:30pm"
+    },
+    {
         "book": "https://bookshop.org/p/books/subcomandante-marcos-global-rebel-icon-nick-henck/a0109cc0c83096fe?ean=9781551647043&next=t",
         "questions": "https://docs.google.com/document/d/1vX1pDqTc-yrw7g7VQFwKxtbEcV783KEt_n3crTfI9OQ/edit?usp=sharing",
         "time": "30 March 2026, 6:30pm"
