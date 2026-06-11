@@ -1,5 +1,10 @@
 const books = [
     {
+        "book": "https://bookshop.org/p/books/a-history-of-america-in-ten-strikes-erik-loomis/5e617d3b07874aad?ean=9781620976272&next=t",
+        "questions": "https://docs.google.com/document/d/1wRBZBnX4O-WK7TzvinGyMLHA2bxVHdlXGXuDijQGiNg/edit?tab=t.0",
+        "time": "14 September 2026, 6:30pm"
+    },
+    {
         "book": "https://bookshop.org/p/books/operation-bounce-house-matt-dinniman/22663289?ean=9780593820308&next=t",
         "questions": "https://docs.google.com/document/d/1Pdb4Xawi3TK0ur_et6hKMFHBZ3GKRYNmsHi_7N8XsLY/edit?usp=sharing",
         "time": "18 May 2026, 6:30pm"
