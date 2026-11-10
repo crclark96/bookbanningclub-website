@@ -1,5 +1,15 @@
 const books = [
     {
+        "book": "https://bookshop.org/p/books/how-fascism-works-the-politics-of-us-and-them-jason-stanley/e91990ec1c61ca6b?ean=9780525511854",
+        "questions": "",
+        "time": "30 November 2026, 6:30pm"
+    },
+    {
+        "book": "https://bookshop.org/p/books/one-day-everyone-will-have-always-been-against-this-omar-el-akkad/4191784c40750b09?ean=9780593804148",
+        "questions": "",
+        "time": "19 October 2026, 6:30pm"
+    },
+    {
         "book": "https://bookshop.org/p/books/a-history-of-america-in-ten-strikes-erik-loomis/5e617d3b07874aad?ean=9781620976272&next=t",
         "questions": "https://docs.google.com/document/d/1wRBZBnX4O-WK7TzvinGyMLHA2bxVHdlXGXuDijQGiNg/edit?tab=t.0",
         "time": "14 September 2026, 6:30pm"
@@ -117,6 +127,7 @@ function getBookImage(book) {
 }
 
 function getDocIdFromUrl(url) {
+    if (!url) { return null; }
     const urlObj = new URL(url);
     const path = urlObj.pathname;
     const pathParts = path.split('/');
